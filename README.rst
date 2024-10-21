@@ -1,15 +1,21 @@
-#Create virtual environment
-python3 -m venv env
+### Create virtual environment
 
-#Activate virtual environment
-source env/bin/activate
+`python3 -m venv env`
 
-#Install dependencies
-pip install -r docs/requirements.txt
+### Activate virtual environment
 
-#build the documentation
-cd docs
-make html
+`source env/bin/activate`
 
-#Open the documentation
-python -m http.server 8080 -d build/html
+### Install dependencies
+
+`pip install -r docs/requirements.txt`
+
+### build the documentation
+
+`cd docs`
+
+`make html`
+
+### Open the documentation
+
+`python -m http.server 8080 -d build/html`
